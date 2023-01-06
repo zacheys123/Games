@@ -1,0 +1,145 @@
+.App {
+	background: rgb(251, 249, 249);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.reg {
+	height: 32rem !important;
+}
+.Auth-form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 44vw;
+	box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+	background: hsl(200, 50%, 30%);
+	opacity: 0.9;
+	padding: 30px;
+	border-radius: 25px;
+}
+.li > p {
+	color: yellow;
+}
+.li {
+	text-decoration: none !important;
+}
+#emailHelp {
+	color: lightgrey;
+}
+.form-group > label,
+.form-check > label {
+	color: white !important;
+	margin-bottom: 0.3rem;
+}
+.Auth-form {
+	width: 420px;
+	box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-radius: 8px;
+	background-color: white;
+}
+
+.Auth-form-content {
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.Auth-form-title {
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 24px;
+	color: rgb(41, 146, 206);
+	font-weight: 800;
+}
+
+label {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgb(34, 34, 34);
+}
+.log > input[type='text'] {
+	border: 1px solid grey;
+	width: 100%;
+}
+
+/* Media queries for responsiveness */
+
+/* For Mobile phones */
+@media screen and (max-device-width: 480px) and (min-device-width: 320px) {
+	.log {
+		display: flex;
+		margin: 0 !important;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 100%;
+		background: url('../assets/lohin.jpg');
+		min-height: 86vh;
+	}
+
+	.Auth-form-container {
+		max-width: 20rem;
+		background: hsl(200, 50%, 30%);
+		border-radius: 20px !important;
+		opacity: 0.7;
+	}
+	.log > label {
+		color: white !important;
+	}
+	.reg {
+		margin-top: 1.3rem !important;
+		opacity: 0.8 !important;
+	}
+	.hreg {
+		background: linear-gradient(
+			hsl(350, 50%, 70%),
+			hsl(200, 40%, 60%),
+			hsl(20, 80%, 20%)
+		) !important;
+		border-radius: 23px !important;
+	}
+}
+/* For laptop and ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.mainreg {
+		min-height: 77vh !important;
+	}
+	.App {
+		min-height: 75vh !important;
+	}
+}
+
+/* For tablet and ipad */
+@media screen and (min-device-width: 480px) and (max-device-width: 768) {
+	.mainreg {
+		min-height: 77vh !important;
+	}
+	.App {
+		min-height: 75vh !important;
+	}
+}
+/* For Desktop and Large-size screen */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+	.mainreg {
+		min-height: 77vh !important;
+	}
+	.App {
+		min-height: 75vh !important;
+	}
+}
+/* For Desktop and Large-size screen */
+@media screen and (min-device-width: 1200px) {
+	.mainreg {
+		min-height: 77vh !important;
+	}
+	.App {
+		min-height: 75vh !important;
+	}
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1280px) {
+	.mainreg {
+		min-height: 70vh !important;
+	}
+}

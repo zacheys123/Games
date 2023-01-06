@@ -1,0 +1,12 @@
+.home {
+	min-height: 84.7vh;
+}
+button {
+	text-transform: none !important;
+	border-radius: 12px !important;
+}
+.contact {
+	z-index: 999;
+	position: absolute;
+}
+/* For Mobile phones */

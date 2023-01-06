@@ -1,0 +1,38 @@
+body {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-height: 100vh;
+}
+.item {
+	padding: 0.7rem;
+	list-style: none;
+	text-decoration: none;
+	font-family: serif;
+	font-weight: bold;
+
+	margin: 0 auto;
+	opacity: 1;
+	color: green;
+}
+.disabled {
+	pointer-events: none;
+	opacity: 0.4;
+	padding: 0.7rem;
+	list-style: none;
+	text-decoration: none;
+	font-family: serif;
+	font-weight: bold;
+}
+/* For Mobile phones */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	body {
+		background: black !important;
+	}
+	.home {
+		min-height: 83vh !important;
+	}
+	.logo h2 {
+		font-size: 0.7rem;
+	}
+}
