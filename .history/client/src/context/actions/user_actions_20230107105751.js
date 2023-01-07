@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'https://gaminhub.herokuapp.com';
+const baseUrl = process.env.REACT_APP_HOST;
 
 export const update_user = async (
 	setMainContext,
