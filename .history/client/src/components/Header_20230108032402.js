@@ -104,8 +104,11 @@ const Header = (props) => {
 				justifyContent="space-between"
 				alignItems="center"
 				className={istheme ? 'header' : 'bg-dark text-light'}
+				style={{
+					padding: '1rem 1rem 0.3rem 1rem !important',
+				}}
 			>
-				<Box className="moreinfo">
+				<Box>
 					<>
 						{!moreinfo ? (
 							<MenuIcon

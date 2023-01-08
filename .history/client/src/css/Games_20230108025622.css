@@ -2,7 +2,7 @@
 	display: flex;
 	background: black;
 	flex-direction: column;
-	min-height: 86.4vh !important;
+	min-height: 88vh !important;
 	max-width: 100%;
 
 	margin: 0 auto 0 auto;
@@ -22,18 +22,12 @@
 	margin-top: 0.9rem;
 	display: flex;
 }
-.divider {
-	display: none !important;
-	border-bottom: 1px solid lightgrey;
-	opacity: 0.4;
-}
 .maingame__header > h1 {
 	flex: 85%;
 	justify-content: flex-end;
 }
 .maingame__header > .button__main {
 	flex: 15%;
-	display: flex;
 }
 
 .choice {
@@ -399,17 +393,8 @@
 	color: lightblue;
 }
 .prev__button {
-	display: none !important;
-	color: yellow !important;
-	margin-left: 0.3rem;
-	margin-right: 0.3rem;
-	cursor: pointer;
-	background: rgb(66, 66, 42);
-	flex: 5;
-	width: 2.4rem;
-	border-radius: 100%;
-	padding-left: 0.6rem;
-	padding-top: 0.2rem;
+	display: none;
+	color: yellow;
 }
 /* 
 
@@ -461,8 +446,7 @@
 	}
 	.button__main > button {
 		font-size: 0.7rem !important;
-		margin-right: 1.2rem;
-		flex: 5;
+		margin-right: 0.7rem;
 	}
 	.maingame__header > h1 {
 		font-size: 1.4rem;
@@ -479,11 +463,9 @@
 		flex: 0 !important;
 	}
 	.prev__button {
-		display: block !important;
+		display: block;
 	}
-	.divider {
-		display: block !important;
-		margin-top: 0.3rem;
+	.main__games {
 	}
 }
 /* For laptop and ipad */

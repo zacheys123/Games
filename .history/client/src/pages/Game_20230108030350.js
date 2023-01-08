@@ -14,7 +14,6 @@ import {
 	Select,
 	FormControl,
 	MenuItem,
-	IconButton,
 	Typography,
 } from '@mui/material';
 import Game__Data from '../components/Fifa/game_data/Game__Data';
@@ -57,7 +56,7 @@ import control from '../assets/control.webp';
 import jumanji from '../assets/jumanji.jpg';
 import metro from '../assets/metro.webp';
 import 'aos/dist/aos.css';
-import Sport from '@mui/icons-material/ShoppingCart';
+import Sport from '@mui/icons-material/SportsSoccer';
 import Aos from 'aos';
 import { useNavigate } from 'react-router-dom';
 
@@ -204,24 +203,21 @@ const Game = (props) => {
 					</Button>
 					<Box className="prev__button">
 						{' '}
-						<div
+						<span
 							style={{
 								color: 'red',
 								fontSize: '.8rem',
 								fontWeight: 'bold',
 								position: 'absolute',
-								backgroud: 'red',
-								width: '1rem',
+								top:09;
 							}}
 						>
-							{' '}
-							<span style={{ color: 'yellow' }}>2</span>
-						</div>{' '}
-						<Sport sx={{ color: 'rgb(175, 42, 233)' }} />
+							1
+						</span>
+						<Sport sx={{ color: 'yellow' }} />
 					</Box>
 				</Box>
 			</Box>
-			<div className="divider"></div>
 			<Box className="maingames__container">
 				{showGame ? (
 					<Box className="choice">

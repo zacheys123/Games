@@ -39,7 +39,6 @@ const Fifa = () => {
 				style={{
 					background: 'transparent',
 					display: 'flex',
-					minHeight: '80vh',
 				}}
 			>
 				<Box sx={{ flex: 1 }}>
@@ -51,7 +50,7 @@ const Fifa = () => {
 						flex: 9,
 						background: 'black',
 						position: 'relative',
-						minHeight: '85vh',
+						minHeight: '80vh',
 					}}
 				>
 					<Box

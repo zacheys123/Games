@@ -406,10 +406,9 @@
 	cursor: pointer;
 	background: rgb(66, 66, 42);
 	flex: 5;
-	width: 2.4rem;
-	border-radius: 100%;
-	padding-left: 0.6rem;
-	padding-top: 0.2rem;
+	width: 2rem;
+	border-radius: 45%;
+	padding-left: 0.5rem;
 }
 /* 
 
@@ -481,9 +480,7 @@
 	.prev__button {
 		display: block !important;
 	}
-	.divider {
-		display: block !important;
-		margin-top: 0.3rem;
+	.main__games {
 	}
 }
 /* For laptop and ipad */

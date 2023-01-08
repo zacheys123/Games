@@ -105,7 +105,7 @@ const Header = (props) => {
 				alignItems="center"
 				className={istheme ? 'header' : 'bg-dark text-light'}
 			>
-				<Box className="moreinfo">
+				<Box>
 					<>
 						{!moreinfo ? (
 							<MenuIcon

@@ -190,8 +190,6 @@ img {
 		display: flex !important;
 		justify-content: center !important;
 		align-items: center !important;
-		margin-top: 0.7rem;
-		margin-bottom: 0.4rem;
 	}
 	.logo > h2 {
 		font-size: 1rem !important;
@@ -204,12 +202,6 @@ img {
 	}
 	.morenav {
 		overflow-x: scroll;
-	}
-	.myprof {
-		margin-right: 0.7rem;
-	}
-	.moreinfo {
-		margin-left: 0.4rem;
 	}
 }
 

@@ -14,7 +14,6 @@ import {
 	Select,
 	FormControl,
 	MenuItem,
-	IconButton,
 	Typography,
 } from '@mui/material';
 import Game__Data from '../components/Fifa/game_data/Game__Data';
@@ -216,8 +215,11 @@ const Game = (props) => {
 						>
 							{' '}
 							<span style={{ color: 'yellow' }}>2</span>
-						</div>{' '}
-						<Sport sx={{ color: 'rgb(175, 42, 233)' }} />
+						</div>
+						<IconButton>
+							{' '}
+							<Sport sx={{ color: 'rgb(175, 42, 233)' }} />
+						</IconButton>
 					</Box>
 				</Box>
 			</Box>

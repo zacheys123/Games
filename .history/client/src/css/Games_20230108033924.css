@@ -406,10 +406,9 @@
 	cursor: pointer;
 	background: rgb(66, 66, 42);
 	flex: 5;
-	width: 2.4rem;
+	width: 2.8rem;
 	border-radius: 100%;
-	padding-left: 0.6rem;
-	padding-top: 0.2rem;
+	padding-left: 1rem;
 }
 /* 
 
