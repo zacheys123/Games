@@ -233,11 +233,11 @@ const Profile = () => {
 									</span>
 								</p>
 								<p>
-									N/B: A User can Only update their data/information
+									N/B:AUser can Only update their data/information
 									only.
 								</p>
 								<p>
-									N/B: An Admin on the Other hand can only delete or
+									N/B:An Admin on the Other hand can only delete or
 									terminate a user anytime but they cannot edit or
 									change any of the user's data.
 								</p>

@@ -195,16 +195,12 @@ const Profile = () => {
 								height: '20em',
 								width: '100%',
 								background: 'white',
-								marginBottom: '2.6rem',
+								marginBottom: '1.9rem',
 							}}
 						>
 							<img src={logo} />
 							<input
-								style={{
-									color: 'white',
-									marginTop: '.7rem',
-									marginBottom: '3.5rem !important',
-								}}
+								style={{ color: 'white', marginTop: '1.9rem' }}
 								type="file"
 								placeholder="change profile picture"
 							/>
@@ -233,11 +229,11 @@ const Profile = () => {
 									</span>
 								</p>
 								<p>
-									N/B: A User can Only update their data/information
+									N/B:AUser can Only update their data/information
 									only.
 								</p>
 								<p>
-									N/B: An Admin on the Other hand can only delete or
+									N/B:An Admin on the Other hand can only delete or
 									terminate a user anytime but they cannot edit or
 									change any of the user's data.
 								</p>
