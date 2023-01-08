@@ -70,9 +70,8 @@ function App() {
 	};
 
 	const getUserData = async (ev) => {
-		const baseUrl = 'https://gaminhub.herokuapp.com';
-		// 'http://localhost:8000';
-
+		const baseUrl = 'http://localhost:8000';
+		// 'https://gaminhub.herokuapp.com';
 		const myprofile = JSON.parse(
 			window.localStorage.getItem('profile'),
 		);
@@ -87,7 +86,6 @@ function App() {
 			setMainContext({
 				type: 'FILL_USER',
 				payload: {
-					userInfo: response?.data?.package,
 					prof_data: response?.data,
 				},
 			});

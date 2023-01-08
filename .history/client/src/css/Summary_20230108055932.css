@@ -4,7 +4,6 @@
 	background: white;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden !important;
 }
 .all__games .header {
 	display: flex;
@@ -45,19 +44,15 @@
 }
 /* Responsive mobile phones */
 @media screen and (max-device-width: 480px) and (min-device-width: 320px) {
-	table {
-		width: 100% !important;
+	.summ > table {
+		max-width: 10rem !important;
 	}
 	th,
 	td {
 		font-size: 0.3rem;
 	}
 	.search__input {
-		width: 22rem !important;
-		margin-right: 5rem !important;
-		padding: 0.4rem !important;
-	}
-	input {
-		width: 100%;
+		width: 10rem !important;
+		margin-right: 10rem !important;
 	}
 }

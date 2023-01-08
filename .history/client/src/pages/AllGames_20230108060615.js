@@ -272,7 +272,7 @@ const AllGames = () => {
 									<th>Amt</th>
 									<th>Paid</th>
 									<th style={{ color: istheme ? 'red' : 'red' }}>
-										Bal
+										Balance
 									</th>
 								</tr>
 							</thead>

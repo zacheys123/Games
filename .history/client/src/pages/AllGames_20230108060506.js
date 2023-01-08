@@ -268,11 +268,11 @@ const AllGames = () => {
 									<th>P1_Score</th>
 									<th>P2_Score</th>
 									<th>Outcome</th>
-									<th>St No</th>
-									<th>Amt</th>
-									<th>Paid</th>
+									<th>Station No</th>
+									<th>Amount</th>
+									<th>AmtPaid</th>
 									<th style={{ color: istheme ? 'red' : 'red' }}>
-										Bal
+										Balance
 									</th>
 								</tr>
 							</thead>

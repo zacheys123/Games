@@ -96,13 +96,7 @@ const Header = (props) => {
 				setPremium(allrefs);
 		}
 	});
-	const myinfo = JSON.parse(window.localStorage.getItem('userinfo'));
-	useEffect(() => {
-		setMainContext({
-			type: 'USERINFO',
-			payload: { userInfo: myinfo },
-		});
-	}, []);
+
 	return (
 		<>
 			<Stack
@@ -148,14 +142,11 @@ const Header = (props) => {
 							>
 								<Link
 									ref={game}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/game"
+									style={{
+										pointerEvents: userInfo ? 'visible' : 'none',
+									}}
 								>
 									{' '}
 									<Button
@@ -174,13 +165,7 @@ const Header = (props) => {
 								</Link>
 								<li
 									ref={summary}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 								>
 									{' '}
 									<Button

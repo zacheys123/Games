@@ -70,9 +70,8 @@ function App() {
 	};
 
 	const getUserData = async (ev) => {
-		const baseUrl = 'https://gaminhub.herokuapp.com';
-		// 'http://localhost:8000';
-
+		const baseUrl = 'http://localhost:8000';
+		// 'https://gaminhub.herokuapp.com';
 		const myprofile = JSON.parse(
 			window.localStorage.getItem('profile'),
 		);
@@ -84,13 +83,15 @@ function App() {
 				'userinfo',
 				JSON.stringify(response?.data?.package),
 			);
-			setMainContext({
-				type: 'FILL_USER',
-				payload: {
-					userInfo: response?.data?.package,
-					prof_data: response?.data,
-				},
-			});
+			setTimeout(() => {
+				setMainContext({
+			type: 'FILL_USER',
+			payload: {
+				userInfo: JSON.parse	window.localStorage.getItem('userinfo'	),
+				prof_data: response?.data,
+			},
+		});
+			}, 2000);
 		} catch (error) {
 			console.log(error.message);
 		}

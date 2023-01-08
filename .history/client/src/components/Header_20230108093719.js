@@ -96,13 +96,7 @@ const Header = (props) => {
 				setPremium(allrefs);
 		}
 	});
-	const myinfo = JSON.parse(window.localStorage.getItem('userinfo'));
-	useEffect(() => {
-		setMainContext({
-			type: 'USERINFO',
-			payload: { userInfo: myinfo },
-		});
-	}, []);
+
 	return (
 		<>
 			<Stack

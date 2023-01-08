@@ -111,7 +111,6 @@ const AllGames = () => {
 						margin: '1rem  auto 0 auto ',
 						alignItems: 'center',
 					}}
-					className="search__input"
 				>
 					<input
 						type="text"
@@ -251,28 +250,25 @@ const AllGames = () => {
 						</Stack>
 					</Stack>
 				) : (
-					<div
-						style={{ width: '100%', margin: '0.5rem auto' }}
-						className="summ"
-					>
-						<table className="table table-bordered table-stripped ">
+					<div style={{ width: '98%', margin: '0.5rem auto' }}>
+						<table className="table table-bordered table-stripped fs-sm-6">
 							<thead>
 								<tr
 									className="bg-dark"
 									style={{ color: istheme ? 'white' : 'yellow' }}
 								>
-									<th>Ply1</th>
-									<th>Ply2</th>
-									<th>P1_Team</th>
-									<th>P2_Team</th>
-									<th>P1_Score</th>
-									<th>P2_Score</th>
+									<th>Player1</th>
+									<th>Player2</th>
+									<th>Player1_Team</th>
+									<th>Player2_Team</th>
+									<th>Player1_Score</th>
+									<th>Player2_Score</th>
 									<th>Outcome</th>
-									<th>St No</th>
-									<th>Amt</th>
-									<th>Paid</th>
+									<th>Station No</th>
+									<th>Amount</th>
+									<th>Amount Paid</th>
 									<th style={{ color: istheme ? 'red' : 'red' }}>
-										Bal
+										Balance
 									</th>
 								</tr>
 							</thead>

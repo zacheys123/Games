@@ -4,7 +4,6 @@
 	background: white;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden !important;
 }
 .all__games .header {
 	display: flex;
@@ -45,19 +44,47 @@
 }
 /* Responsive mobile phones */
 @media screen and (max-device-width: 480px) and (min-device-width: 320px) {
-	table {
-		width: 100% !important;
+	.choice {
+		display: flex;
+		flex-direction: row;
+		overflow-y: auto;
 	}
-	th,
-	td {
-		font-size: 0.3rem;
-	}
-	.search__input {
-		width: 22rem !important;
-		margin-right: 5rem !important;
-		padding: 0.4rem !important;
-	}
-	input {
+	.choice div {
 		width: 100%;
+	}
+	.choice div img {
+		width: 12rem !important;
+		object-fit: cover;
+		height: 12rem !important;
+	}
+	.button__main > button {
+		font-size: 0.7rem !important;
+		margin-right: 1.2rem;
+		flex: 5;
+	}
+	.maingame__header > h1 {
+		font-size: 1.4rem;
+	}
+	.relate__parent {
+		display: none !important;
+		flex: 0 !important;
+	}
+	.modequick {
+		display: flex !important;
+	}
+	.preview {
+		display: none;
+		flex: 0 !important;
+	}
+	.prev__button {
+		display: block !important;
+	}
+	.divider {
+		display: block !important;
+		margin-top: 0.3rem;
+	}
+	.modeRight__quickmatch {
+		flex: 6.5;
+		height: 60vh !important;
 	}
 }

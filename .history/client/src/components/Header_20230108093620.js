@@ -96,13 +96,7 @@ const Header = (props) => {
 				setPremium(allrefs);
 		}
 	});
-	const myinfo = JSON.parse(window.localStorage.getItem('userinfo'));
-	useEffect(() => {
-		setMainContext({
-			type: 'USERINFO',
-			payload: { userInfo: myinfo },
-		});
-	}, []);
+
 	return (
 		<>
 			<Stack
@@ -148,13 +142,7 @@ const Header = (props) => {
 							>
 								<Link
 									ref={game}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/game"
 								>
 									{' '}
@@ -174,13 +162,7 @@ const Header = (props) => {
 								</Link>
 								<li
 									ref={summary}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 								>
 									{' '}
 									<Button
@@ -202,13 +184,7 @@ const Header = (props) => {
 								</li>
 								<Link
 									ref={league}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/standings"
 								>
 									{' '}
@@ -228,13 +204,7 @@ const Header = (props) => {
 								</Link>
 								<Link
 									ref={ranking}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/ranking"
 								>
 									{' '}
@@ -254,13 +224,7 @@ const Header = (props) => {
 								</Link>
 								<Link
 									ref={vids}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/vids"
 								>
 									{' '}
@@ -280,13 +244,7 @@ const Header = (props) => {
 								</Link>
 								<Link
 									ref={access}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/access-saved"
 								>
 									{' '}
@@ -305,13 +263,7 @@ const Header = (props) => {
 									</Button>
 								</Link>
 								<Link
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/theme"
 								>
 									{' '}
@@ -331,13 +283,7 @@ const Header = (props) => {
 								</Link>
 								<Link
 									ref={chat}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/chat"
 								>
 									{' '}
@@ -357,13 +303,7 @@ const Header = (props) => {
 								</Link>
 								<Link
 									ref={share}
-									className={
-										user?.result?._id
-											? userInfo
-												? 'item'
-												: 'disabled'
-											: 'disabled'
-									}
+									className={user?.result?._id ? 'item' : 'disabled'}
 									to="/share"
 								>
 									{' '}

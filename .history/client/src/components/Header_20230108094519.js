@@ -98,10 +98,7 @@ const Header = (props) => {
 	});
 	const myinfo = JSON.parse(window.localStorage.getItem('userinfo'));
 	useEffect(() => {
-		setMainContext({
-			type: 'USERINFO',
-			payload: { userInfo: myinfo },
-		});
+		setMainContext({type:'USERINFO',payload{userInfo:myinfo}});
 	}, []);
 	return (
 		<>
