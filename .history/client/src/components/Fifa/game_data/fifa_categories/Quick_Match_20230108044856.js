@@ -84,7 +84,7 @@ const Quick_Match = (props) => {
 				setTemp(rec_match);
 
 				setLoading(false);
-				navigate('#top');
+				Navigate('#top');
 			}, 2000);
 
 			setLoading(true);

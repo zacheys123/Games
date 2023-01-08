@@ -485,10 +485,6 @@
 		display: block !important;
 		margin-top: 0.3rem;
 	}
-	.modeRight__quickmatch {
-		flex: 6.5;
-		height: 60vh !important;
-	}
 }
 /* For laptop and ipad */
 @media screen and (min-device-width: 821px) and (max-device-width: 1440px) {
@@ -508,6 +504,9 @@
 	.relate__parent {
 		display: none !important;
 		flex: 0 !important;
+	}
+	.modeRight__quickmatch {
+		flex: 7;
 	}
 }
 
@@ -532,14 +531,6 @@
 	.relate__parent {
 		display: none !important;
 		flex: 0 !important;
-	}
-	.modeRight__quickmatch {
-		flex: 6.5;
-		height: 60vh !important;
-	}
-	.preview {
-		flex: 4;
-		height: 60vh !important;
 	}
 }
 /* For Desktop and Large-size screen */

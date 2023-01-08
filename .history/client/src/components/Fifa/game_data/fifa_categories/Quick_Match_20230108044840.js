@@ -29,7 +29,7 @@ const Quick_Match = (props) => {
 	const [temp_data, setTemp] = useState(
 		JSON.parse(localStorage.getItem('rec_games')),
 	);
-	const navigate = useNavigate();
+
 	const [rec_match, setRec_match] = useState(() => {
 		const storedvalues = localStorage.getItem('rec_games');
 		if (!storedvalues) return [];
@@ -84,7 +84,7 @@ const Quick_Match = (props) => {
 				setTemp(rec_match);
 
 				setLoading(false);
-				navigate('#top');
+				Navigate('#top');
 			}, 2000);
 
 			setLoading(true);

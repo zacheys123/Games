@@ -17,7 +17,6 @@ import lastimg from '../../../../assets/last.jpg';
 import nba from '../../../../assets/nba.jpg';
 
 import SideView from './SideView';
-import { Navigate, useNavigate } from 'react-router-dom';
 const Quick_Match = (props) => {
 	const {
 		game: { fifa },
@@ -29,7 +28,7 @@ const Quick_Match = (props) => {
 	const [temp_data, setTemp] = useState(
 		JSON.parse(localStorage.getItem('rec_games')),
 	);
-	const navigate = useNavigate();
+
 	const [rec_match, setRec_match] = useState(() => {
 		const storedvalues = localStorage.getItem('rec_games');
 		if (!storedvalues) return [];
@@ -84,7 +83,6 @@ const Quick_Match = (props) => {
 				setTemp(rec_match);
 
 				setLoading(false);
-				navigate('#top');
 			}, 2000);
 
 			setLoading(true);
@@ -110,9 +108,8 @@ const Quick_Match = (props) => {
 	const values = { rec_match, game_data, setTemp };
 	return (
 		<Stack
-			id="top"
 			direction="row"
-			sx={{ background: 'black', minHeight: '65vh !important' }}
+			sx={{ background: 'black', height: '50vh !important' }}
 			className="modequick"
 		>
 			<Box
@@ -298,7 +295,7 @@ const Quick_Match = (props) => {
 									style={{
 										// width: '40% !important',
 										// padding: '.6rem 1.7rem .6rem 1.7rem',
-										marginTop: '-1.4rem',
+										// marginTop: '-1rem',
 										color: 'yellow',
 										background: 'purple',
 										// fontWeight: 'bold',

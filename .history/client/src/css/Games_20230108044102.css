@@ -485,10 +485,6 @@
 		display: block !important;
 		margin-top: 0.3rem;
 	}
-	.modeRight__quickmatch {
-		flex: 6.5;
-		height: 60vh !important;
-	}
 }
 /* For laptop and ipad */
 @media screen and (min-device-width: 821px) and (max-device-width: 1440px) {
@@ -533,13 +529,12 @@
 		display: none !important;
 		flex: 0 !important;
 	}
-	.modeRight__quickmatch {
+	.modequick {
 		flex: 6.5;
-		height: 60vh !important;
+		height: 50vh !important;
 	}
 	.preview {
 		flex: 4;
-		height: 60vh !important;
 	}
 }
 /* For Desktop and Large-size screen */
