@@ -195,12 +195,10 @@ const Profile = () => {
 								height: '20em',
 								width: '100%',
 								background: 'white',
-								marginBottom: '1.5rem',
 							}}
 						>
 							<img src={logo} />
 							<input
-								style={{ color: 'white' }}
 								type="file"
 								placeholder="change profile picture"
 							/>

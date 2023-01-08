@@ -29,7 +29,7 @@ import {
 	update_user,
 	delete_user,
 } from '../../context/actions/user_actions';
-import './profile.css';
+
 import Modal from './Modal';
 import EditIcon from '@mui/icons-material/Edit';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -186,7 +186,7 @@ const Profile = () => {
 
 	return (
 		<Stack sx={{ background: 'white', minHeight: '85vh' }}>
-			<MainStack className="profile">
+			<MainStack>
 				<Left_Bar>
 					<Image_Data>
 						<h4>Change Profile Picture</h4>
@@ -195,12 +195,10 @@ const Profile = () => {
 								height: '20em',
 								width: '100%',
 								background: 'white',
-								marginBottom: '1.5rem',
 							}}
 						>
 							<img src={logo} />
 							<input
-								style={{ color: 'white' }}
 								type="file"
 								placeholder="change profile picture"
 							/>

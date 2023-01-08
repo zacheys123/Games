@@ -29,7 +29,7 @@ import {
 	update_user,
 	delete_user,
 } from '../../context/actions/user_actions';
-import './profile.css';
+
 import Modal from './Modal';
 import EditIcon from '@mui/icons-material/Edit';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -55,14 +55,31 @@ const Profile = () => {
 
 	const navigate = useNavigate();
 
-	const [prof, setProf] = useState({
-		username: '',
-		email: ' ',
-		marital: '',
-		occupation: '',
-		city: '',
-		password: '',
-		confirmpassword: '',
+	const [prof, setProf] = useState(() => {
+		let prev = {
+			username: prof.username,
+			email: prof.email,
+			marital: prof.marital,
+			occupation: prof.occupation,
+			city: prof.city,
+			password: prof.password,
+			confirmpassword: prof.password,
+		};
+		if (
+			prev.username === '' ||
+			prev.email === '' ||
+			prev.password === ''
+		) {
+			return {
+				username: prof.username,
+				email: prof.email,
+				marital: prof.marital,
+				occupation: prof.occupation,
+				city: prof.city,
+				password: prof.password,
+				confirmpassword: prof.password,
+			};
+		}
 	});
 
 	const [passw, setPassword] = useState(false);
@@ -185,8 +202,8 @@ const Profile = () => {
 	}, []);
 
 	return (
-		<Stack sx={{ background: 'white', minHeight: '85vh' }}>
-			<MainStack className="profile">
+		<Stack sx={{ background: 'white', minHeight: '80vh' }}>
+			<MainStack>
 				<Left_Bar>
 					<Image_Data>
 						<h4>Change Profile Picture</h4>
@@ -195,12 +212,10 @@ const Profile = () => {
 								height: '20em',
 								width: '100%',
 								background: 'white',
-								marginBottom: '1.5rem',
 							}}
 						>
 							<img src={logo} />
 							<input
-								style={{ color: 'white' }}
 								type="file"
 								placeholder="change profile picture"
 							/>

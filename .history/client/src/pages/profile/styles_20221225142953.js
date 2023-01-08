@@ -65,7 +65,6 @@ export const Left_Bar = styled.div`
 export const Image_Data = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 1rem;
 	img {
 		height: 100%;
 		width: 100%;

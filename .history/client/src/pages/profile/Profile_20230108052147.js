@@ -189,7 +189,7 @@ const Profile = () => {
 			<MainStack className="profile">
 				<Left_Bar>
 					<Image_Data>
-						<h4>Change Profile Picture</h4>
+						<h4 style={{ color: 'white' }}>Change Profile Picture</h4>
 						<Box
 							sx={{
 								height: '20em',
@@ -200,7 +200,6 @@ const Profile = () => {
 						>
 							<img src={logo} />
 							<input
-								style={{ color: 'white' }}
 								type="file"
 								placeholder="change profile picture"
 							/>
