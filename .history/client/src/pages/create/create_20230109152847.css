@@ -1,0 +1,13 @@
+.main__create {
+	min-height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
+}
+.create {
+	background: white;
+	max-width: 480px;
+	min-width: 320px;
+	min-height: 300px;
+}
