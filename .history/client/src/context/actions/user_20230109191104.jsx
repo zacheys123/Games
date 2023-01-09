@@ -1,20 +1,21 @@
+import { NavigateBefore } from '@mui/icons-material';
 import axios from 'axios';
 
 export const createAdditional = async (
 	setMainContext,
-	additional,
+	additional_data,
 	success,
 	loading,
 	navigate,
 ) => {
 	let baseUrl = 'http://localhost:8000';
 
-	const bsname = additional?.add?.current?.bsname;
-	const id = additional?.userId;
+	const bsname = additional_data?.add?.current?.bsname;
+	const id = additional_data?.userId;
 	try {
 		let response = axios.put(
-			`${baseUrl}/users/additional/${id}`,
-			additional,
+			`${baseUrl}/users/additional/${userId}`,
+			additional_data,
 		);
 		setTimeout(() => {
 			setTimeout(() => {

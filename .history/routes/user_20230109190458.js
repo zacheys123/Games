@@ -8,7 +8,7 @@ import {
 const router = express.Router();
 
 router.route('/register').post(register);
-router.route('/additional/:id').put(additional);
+router.route('/additional').put(additional);
 router.route('/login').post(login);
 router.route('/').post(users);
 // router.route('/googleSignin').post(googleSignin);

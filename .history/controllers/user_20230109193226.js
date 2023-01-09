@@ -89,9 +89,12 @@ export const login = async (req, res) => {
 
 export const additional = async (req, res) => {
 	let { userId, ...alldata } = req.body;
-	console.log({ ...alldata });
+	console.log(alldata.bsname);
 	if (userId === req.params.id || req.body.isAdmin) {
-		if (alldata?.bsname && alldata?.birthdate) {
+		if (
+			alldata?.add?.current.bsname &&
+			alldata?.add?.current.birthdate
+		) {
 			try {
 				const user = await UserSchema.updateOne(
 					{ _id: userId },

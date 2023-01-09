@@ -54,29 +54,24 @@ const CreateName = () => {
 	const add = useRef();
 	const navigate = useNavigate();
 	const id = JSON.parse(window.localStorage.getItem('profile'));
-	const register = useCallback(
-		(ev) => {
-			const additional_data = { add, userId: id?.result?._id };
-			ev.preventDefault();
-
-			if (add?.current?.bsname && add?.current?.birth) {
-				createAdditional(
-					setMainContext,
-					additional_data,
-					success,
-					successmessage,
-					loading,
-					navigate,
-				);
-			} else {
-				setMainContext({
-					type: 'REGERROR',
-					payload: { iserror, error: 'All fields must be entered' },
-				});
-			}
-		},
-		[setMainContext],
-	);
+	const register = useCallback(() => {
+		const additional_data = { add, userId: id?.result?._id };
+		if (additional?.bsname && additional.birth) {
+			createAdditional(
+				setMainContext,
+				additional_data,
+				success,
+				successmessage,
+				loading,
+				navigate,
+			);
+		} else {
+			setMainContext({
+				type: 'REGERROR',
+				payload: { iserror, error: 'All fields must be entered' },
+			});
+		}
+	}, [setMainContext]);
 	useEffect(() => {
 		add.current = additional;
 	}, []);

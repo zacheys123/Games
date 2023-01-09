@@ -88,8 +88,8 @@ export const login = async (req, res) => {
 };
 
 export const additional = async (req, res) => {
-	let { userId, ...alldata } = req.body;
-	console.log({ ...alldata });
+	let { userId, alldata } = req.body;
+	console.log(alldata);
 	if (userId === req.params.id || req.body.isAdmin) {
 		if (alldata?.bsname && alldata?.birthdate) {
 			try {

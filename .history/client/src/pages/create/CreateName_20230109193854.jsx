@@ -58,7 +58,7 @@ const CreateName = () => {
 		(ev) => {
 			const additional_data = { add, userId: id?.result?._id };
 			ev.preventDefault();
-
+			console.log(add.current);
 			if (add?.current?.bsname && add?.current?.birth) {
 				createAdditional(
 					setMainContext,
