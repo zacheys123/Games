@@ -156,7 +156,7 @@ const CreateName = () => {
 								</p>
 							</Box>
 						)}
-						{success && (
+						{!success && (
 							<Box>
 								<h4
 									className=""

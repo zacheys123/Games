@@ -42,14 +42,7 @@ export const mainreducer = (state, action) => {
 		case 'LOADING': {
 			return {
 				...state,
-				loading: !action.payload.loading,
-			};
-		}
-		case 'ALLADDED': {
-			return {
-				...state,
-				success: !action.payload.success,
-				successmessage: action.payload.successmessage,
+				loading: true,
 			};
 		}
 		case 'REGERROR': {

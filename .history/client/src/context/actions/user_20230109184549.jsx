@@ -6,7 +6,6 @@ export const createAdditional = async (
 	additional_data,
 	success,
 	loading,
-	navigate,
 ) => {
 	let baseUrl = 'https://gaminhub.herokuapp.com';
 
@@ -19,7 +18,7 @@ export const createAdditional = async (
 		setTimeout(() => {
 			setTimeout(() => {
 				setTimeout(() => {
-					navigate('/v2/package-plan');
+					NavigateBefore('/v2/package-plan');
 				}, 1500);
 				setMainContext(
 					{

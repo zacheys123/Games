@@ -49,7 +49,6 @@ export const mainreducer = (state, action) => {
 			return {
 				...state,
 				success: !action.payload.success,
-				successmessage: action.payload.successmessage,
 			};
 		}
 		case 'REGERROR': {

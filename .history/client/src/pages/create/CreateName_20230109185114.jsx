@@ -156,7 +156,7 @@ const CreateName = () => {
 								</p>
 							</Box>
 						)}
-						{success && (
+						{!success && (
 							<Box>
 								<h4
 									className=""
@@ -173,21 +173,19 @@ const CreateName = () => {
 								</h4>
 							</Box>
 						)}
-						{!success && (
-							<Button
-								variant="outlined"
-								sx={{ margin: 'auto 45% auto 36%' }}
-							>
-								{loading ? (
-									<CircularProgress
-										size="20px"
-										sx={{ color: 'white' }}
-									/>
-								) : (
-									'Proceed'
-								)}
-							</Button>
-						)}
+						<Button
+							variant="outlined"
+							sx={{ margin: 'auto 45% auto 36%' }}
+						>
+							{loading ? (
+								<CircularProgress
+									size="20px"
+									sx={{ color: 'white' }}
+								/>
+							) : (
+								'Proceed'
+							)}
+						</Button>
 					</form>
 				</Box>
 			</Box>

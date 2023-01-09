@@ -11,7 +11,6 @@ import {
 import { useMainContext } from '../../context/context_/MainContext';
 import Modal from '../profile/Modal';
 import { createAdditional } from '../../context/actions/user';
-import { useNavigate } from 'react-router-dom';
 const CreateName = () => {
 	const {
 		main: { iserror, error, success, successmessage, loading },
@@ -47,7 +46,6 @@ const CreateName = () => {
 		return days;
 	}
 	const add = useRef();
-	const navigate = useNavigate();
 	const id = JSON.parse(window.localStorage.getItem('profile'));
 	const register = useCallback(() => {
 		const additional_data = { add, userId: id?.result?._id };
@@ -58,7 +56,6 @@ const CreateName = () => {
 				success,
 				successmessage,
 				loading,
-				navigate,
 			);
 		} else {
 			setMainContext({
@@ -158,7 +155,7 @@ const CreateName = () => {
 						)}
 						{success && (
 							<Box>
-								<h4
+								<p
 									className=""
 									style={{
 										width: '60%',
@@ -166,28 +163,25 @@ const CreateName = () => {
 										height: '.91rem',
 										color: 'lightblue',
 										fontFamily: 'ariel',
-										fontSize: '1rem !important',
 									}}
 								>
 									{successmessage}
-								</h4>
+								</p>
 							</Box>
 						)}
-						{!success && (
-							<Button
-								variant="outlined"
-								sx={{ margin: 'auto 45% auto 36%' }}
-							>
-								{loading ? (
-									<CircularProgress
-										size="20px"
-										sx={{ color: 'white' }}
-									/>
-								) : (
-									'Proceed'
-								)}
-							</Button>
-						)}
+						<Button
+							variant="outlined"
+							sx={{ margin: 'auto 45% auto 36%' }}
+						>
+							{!loading ? (
+								<CircularProgress
+									size="20px"
+									sx={{ color: 'white' }}
+								/>
+							) : (
+								'Proceed'
+							)}
+						</Button>
 					</form>
 				</Box>
 			</Box>

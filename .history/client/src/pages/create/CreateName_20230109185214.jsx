@@ -156,7 +156,7 @@ const CreateName = () => {
 								</p>
 							</Box>
 						)}
-						{success && (
+						{!success && (
 							<Box>
 								<h4
 									className=""
@@ -173,7 +173,7 @@ const CreateName = () => {
 								</h4>
 							</Box>
 						)}
-						{!success && (
+						{success && (
 							<Button
 								variant="outlined"
 								sx={{ margin: 'auto 45% auto 36%' }}

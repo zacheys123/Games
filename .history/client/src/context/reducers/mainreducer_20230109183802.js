@@ -45,13 +45,6 @@ export const mainreducer = (state, action) => {
 				loading: !action.payload.loading,
 			};
 		}
-		case 'ALLADDED': {
-			return {
-				...state,
-				success: !action.payload.success,
-				successmessage: action.payload.successmessage,
-			};
-		}
 		case 'REGERROR': {
 			return {
 				...state,

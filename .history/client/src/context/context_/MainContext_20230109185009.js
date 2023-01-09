@@ -16,7 +16,7 @@ const initialState = {
 	iserror: false,
 	error: '',
 	success: false,
-	successmessage: 'Welcome to Gamehub ',
+	successmessage: '',
 	modalcontent: '',
 	currentUser: '',
 	updated_user: {},

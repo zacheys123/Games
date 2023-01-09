@@ -1,4 +1,3 @@
-import { NavigateBefore } from '@mui/icons-material';
 import axios from 'axios';
 
 export const createAdditional = async (
@@ -6,7 +5,6 @@ export const createAdditional = async (
 	additional_data,
 	success,
 	loading,
-	navigate,
 ) => {
 	let baseUrl = 'https://gaminhub.herokuapp.com';
 
@@ -18,19 +16,13 @@ export const createAdditional = async (
 		);
 		setTimeout(() => {
 			setTimeout(() => {
-				setTimeout(() => {
-					navigate('/v2/package-plan');
-				}, 1500);
-				setMainContext(
-					{
-						type: 'ALLADDED',
-						payload: {
-							success: success,
-							successmessage: `Welcome ${bsname}`,
-						},
+				setMainContext({
+					type: 'ALLADDED',
+					payload: {
+						success: success,
+						successmessage: `Welcome ${bsname}`,
 					},
-					2000,
-				);
+				});
 			}, 2000);
 			setMainContext({
 				type: 'SUCESSADD',
