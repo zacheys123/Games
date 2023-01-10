@@ -443,7 +443,7 @@ const Header = (props) => {
 								className="title__name"
 								onClick={() => navigate('/')}
 							>
-								{!user?.result?._id && (
+								{!user.result?._id && (
 									<>
 										{' '}
 										<span className="first">{name[0]}</span>
