@@ -452,6 +452,7 @@ const Header = (props) => {
 									</>
 								)}
 							</h5>
+							) : ( '' )}
 						</>
 					</Box>
 
