@@ -1,0 +1,10 @@
+.main {
+	min-height: 80vh;
+
+	position: absolute;
+}
+.main__score {
+}
+.player1 {
+	width: 20%;
+}

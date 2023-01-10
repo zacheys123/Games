@@ -1,0 +1,7 @@
+.main {
+	min-height: 85vh;
+	background: black;
+}
+.main__score {
+	background: white !important;
+}

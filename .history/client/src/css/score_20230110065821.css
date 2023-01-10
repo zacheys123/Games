@@ -1,0 +1,10 @@
+.main {
+	min-height: 85vh;
+	background: black;
+	overflow-y: scroll;
+	position: relative;
+}
+.main__score {
+	background: white !important;
+	position: absolute;
+}

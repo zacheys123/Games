@@ -1,0 +1,15 @@
+.main {
+	position: absolute;
+	background-color: rgba(207, 203, 203);
+}
+.main__score {
+	display: flex;
+	align-items: center;
+	background-color: rgba(207, 203, 203);
+}
+.player1 {
+	width: 20%;
+}
+button {
+	width: 9%;
+}

@@ -1,0 +1,9 @@
+.main {
+	min-height: 85vh;
+	background: black;
+}
+.main__score {
+	height: 80% !important;
+	width: 70%;
+	background: white;
+}
