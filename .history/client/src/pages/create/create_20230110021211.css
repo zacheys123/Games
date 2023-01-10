@@ -1,0 +1,82 @@
+.main__create {
+	min-height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(18, 14, 14);
+}
+.create {
+	background: rgb(62, 34, 34);
+	max-width: 400px !important;
+	min-width: 320px;
+	min-height: 310px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+.date {
+	height: 2rem !important;
+	margin: 1rem;
+	color: black;
+	background: white !important;
+}
+input[type='text'],
+input[type='date'] {
+	width: 85%;
+	margin: 1rem;
+	padding: 0.2rem;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid lightgrey;
+}
+.create > .h3 {
+	color: white;
+}
+.date {
+	display: flex;
+}
+.date > input[type='text'] {
+	display: none;
+}
+/*
+	For
+	Mobile
+	phones
+	*/
+@media screen and (max-device-width: 480px) and (min-device-width: 320px) {
+	.create {
+		width: 300px !important;
+	}
+}
+
+/* For tablet and ipad */
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+	.create {
+		width: 500px !important;
+	}
+}
+/* For laptop and ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.create {
+		width: 600px !important;
+	}
+}
+/* For Desktop and Large-size screen */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+	.create {
+		width: 650px !important;
+	}
+}
+/* For Desktop and Large-size screen */
+@media screen and (min-device-width: 1200px) {
+	.create {
+		width: 700px !important;
+	}
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1280px) {
+	.create {
+		width: 900px !important;
+	}
+}
