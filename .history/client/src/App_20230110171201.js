@@ -73,7 +73,7 @@ function App() {
 	};
 
 	const getUserData = async (ev) => {
-		const baseUrl = 'https://gaminhub.herokuapp.com';
+		const baseUrl =
 		// 'http://localhost:8000';
 
 		const myprofile = JSON.parse(

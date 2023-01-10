@@ -138,7 +138,7 @@ const ConfirmData = ({ child_userdata }) => {
 	}, [userInfo]);
 
 	const getUserData = async (ev) => {
-		const baseUrl = 'https://gaminhub.herokuapp.com';
+		const baseUrl = process.env.REACT_APP_BASE;
 		const myprofile = JSON.parse(
 			window.localStorage.getItem('profile'),
 		);
