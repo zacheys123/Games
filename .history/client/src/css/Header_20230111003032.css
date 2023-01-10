@@ -255,10 +255,12 @@ img {
 		margin-right: -2rem !important;
 	}
 	.item > button {
-		margin-top: -0.9rem !important;
+		padding:.4rem
 		font-size: 0.7rem !important;
+	
 	}
-	.item {
+	.item{
+margin-top: -0.9rem !important;
 	}
 }
 
