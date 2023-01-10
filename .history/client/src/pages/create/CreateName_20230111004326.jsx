@@ -25,7 +25,7 @@ const CreateName = () => {
 	});
 	const [loadi, setLoadi] = useState(false);
 	const [additional, setAdditional] = useState({
-		bsname: '',
+		bsname: 'eg Safaricom ltd co',
 		birthdate: `${otherDate.day}/${otherDate.month}/${otherDate.year}`,
 	});
 

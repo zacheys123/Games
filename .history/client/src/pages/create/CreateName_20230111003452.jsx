@@ -25,7 +25,7 @@ const CreateName = () => {
 	});
 	const [loadi, setLoadi] = useState(false);
 	const [additional, setAdditional] = useState({
-		bsname: '',
+		bsname: 'eg Safaricom ltd co',
 		birthdate: `${otherDate.day}/${otherDate.month}/${otherDate.year}`,
 	});
 
@@ -94,12 +94,7 @@ const CreateName = () => {
 								name="bsname"
 								value={additional.bsname}
 								placeholder="Bussiness/Company Name"
-								onChange={(ev) =>
-									setAdditional({
-										...additional,
-										bsname: ev.target.value,
-									})
-								}
+								onChange={handleChange}
 								required
 							/>
 						</Box>
@@ -175,7 +170,7 @@ const CreateName = () => {
 										height: '.91rem',
 										color: 'lightblue',
 										fontFamily: 'ariel',
-										fontSize: '.4rem !important',
+										fontSize: '.6rem !important',
 									}}
 								>
 									{successmessage}
