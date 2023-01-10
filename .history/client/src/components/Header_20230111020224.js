@@ -518,7 +518,7 @@ const Header = (props) => {
 						</Box>
 
 						<Box className="auth">
-							{!auth && (
+							{user?.result?._id && (
 								<Box className="userdata">
 									{' '}
 									<h6 style={{ margin: '.2rem auto -.3rem 5rem' }}>
@@ -620,7 +620,7 @@ const Header = (props) => {
 										textAlign: 'center',
 									}}
 								>
-									Change({userInfo}) Plan
+									Change ({userInfo}) Plan
 								</Typography>
 								<Button
 									style={{ marginLeft: '1rem !important' }}
