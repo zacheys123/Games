@@ -59,7 +59,7 @@ const CreateName = () => {
 				);
 				setTimeout(() => {
 					navigate('/v2/package-plan');
-				}, 6000);
+				}, 3000);
 			} else {
 				setTimeout(() => {
 					setMainContext({

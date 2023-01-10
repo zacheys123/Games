@@ -255,7 +255,7 @@ img {
 		margin-right: -2rem !important;
 	}
 	.item > button {
-		margin-top: -0.9rem !important;
+		margin-top: -0.9rem;
 		font-size: 0.7rem !important;
 		background: yellow !important;
 	}

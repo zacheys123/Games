@@ -522,7 +522,7 @@ const Header = (props) => {
 						</Box>
 
 						<Box className="auth">
-							{user?.result?._id && (
+							{!user?.result?._id && (
 								<Box className="userdata">
 									{' '}
 									<h6 style={{ margin: '.2rem auto -.3rem 5rem' }}>
