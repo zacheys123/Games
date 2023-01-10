@@ -150,10 +150,10 @@ const ConfirmData = ({ child_userdata }) => {
 				type: 'FILL_USER',
 				payload: { userInfo: response?.data?.package },
 			});
-			console.log(response?.data);
 		} catch (error) {
 			console.log(error.message);
 		}
+		console.log(response?.data);
 	};
 
 	useEffect(() => {
