@@ -620,7 +620,7 @@ const Header = (props) => {
 										textAlign: 'center',
 									}}
 								>
-									Change ({userInfo}) Plan
+									Change({userInfo})Plan
 								</Typography>
 								<Button
 									style={{ marginLeft: '1rem !important' }}

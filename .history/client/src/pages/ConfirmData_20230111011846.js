@@ -183,9 +183,10 @@ const ConfirmData = ({ child_userdata }) => {
 							style={{
 								fontWeight: 'bold',
 								color: 'yellow',
+								fontWeight: 'bold',
 							}}
 						>
-							<span style={{ color: 'white', fontWeight: '400' }}>
+							<span style={{ color: 'red', fontWeight: '400' }}>
 								Currently:
 							</span>
 							{userInfo}
