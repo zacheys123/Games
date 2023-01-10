@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = process.env.REACT_APP_BASE;
+const baseUrl = 'https://gaminhub.herokuapp.com';
 export const createPlan = async (
 	plan,
 	navigate,

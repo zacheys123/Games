@@ -73,7 +73,7 @@ function App() {
 	};
 
 	const getUserData = async (ev) => {
-		const baseUrl = process.env.REACT_APP_BASE;
+		const baseUrl = process.REACT_APP_BASE;
 		// 'http://localhost:8000';
 
 		const myprofile = JSON.parse(

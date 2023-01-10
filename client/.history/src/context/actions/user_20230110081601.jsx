@@ -8,7 +8,7 @@ export const createAdditional = async (
 	setLoading,
 	additional,
 ) => {
-	const baseUrl = process.env.REACT_APP_BASE;
+	let baseUrl = 'https://gaminhub.herokuapp.com';
 
 	const bsname = addit?.add?.current?.bsname;
 	const id = addit?.userId;

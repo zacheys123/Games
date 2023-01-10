@@ -9,7 +9,7 @@ export const getStandings = async (
 ) => {
 	const options = {
 		method: 'GET',
-		url: `${process.env.REACT_APP_BASE}/standings`,
+		url: `https://gaminhub.herokuapp.com/standings`,
 		params: { season: year, league: standings },
 	};
 	try {
